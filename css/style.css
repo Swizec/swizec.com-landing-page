@@ -1,0 +1,33 @@
+
+a {
+    color: #6f4890;
+}
+
+a:hover {
+    color: #6f4890;
+    text-decoration: underline;
+}
+
+#me img {
+    width: 90%;
+    margin-bottom: 1em;
+}
+
+#me div.col-lg-4 {
+    text-align: center;
+}
+
+#me address {
+    font-size: 1.3em;
+}
+
+#me address a {
+    transition: color ease-in 300ms;
+    -webkit-transition: color ease-in 300ms;
+    -moz-transition: color ease-in 300ms;
+}
+
+#me address a:hover {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
