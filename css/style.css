@@ -42,3 +42,11 @@ div.col-lg-4 {
 quote {
     font-style: italic;
 }
+
+li {
+    list-style: none;
+}
+
+p.center {
+    text-align: center;
+}
