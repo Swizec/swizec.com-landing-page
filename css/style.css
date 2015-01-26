@@ -3,6 +3,10 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  background: url("../images/hero-background.jpg") no-repeat;
+  background-size: 100%;
+  background-position-y: 30%;
+  background-attachment: fixed;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -46,6 +50,11 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  //background: url("../images/hero-background.jpg");
+  //background-size: 700px;
+  //background-position-y: -150px;
+  text-align: right;
+  padding: 90px 60px;
 }
 .jumbotron .btn {
   font-size: 21px;
