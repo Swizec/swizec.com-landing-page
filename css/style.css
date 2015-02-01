@@ -1,8 +1,10 @@
 
 /* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background: url("../images/swizec-background.jpg") no-repeat;
+  background-size: 100%;
+  background-position-y: 30%;
+  background-attachment: fixed;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -16,6 +18,10 @@ body {
 /* Custom page header */
 .header {
 
+}
+header small {
+    display: block;
+    margin-top: -1em;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -32,6 +38,17 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
+.container {
+    background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 43%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(43%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 43%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 43%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 43%,rgba(255,255,255,0) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 43%,rgba(255,255,255,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+    margin: 0px;
+}
+
 /* Customize container */
 @media (min-width: 768px) {
   .container {
@@ -46,6 +63,11 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  //background: url("../images/hero-background.jpg");
+  //background-size: 700px;
+  //background-position-y: -150px;
+  text-align: right;
+  padding: 90px 60px;
 }
 .jumbotron .btn {
   font-size: 21px;
@@ -122,6 +144,10 @@ div.col-lg-4 {
     color: rgb(51, 51, 51);
 }
 
+#me .left-side {
+    min-height: 450px;
+}
+
 quote {
     font-style: italic;
 }
@@ -135,6 +161,9 @@ p.center {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    background: none;
+  }
   .jumbotron {
     font-size: 18px;
     padding: 10px;
@@ -149,5 +178,11 @@ p.center {
   }
   ul {
       padding-left: 0px !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #me .left-side {
+      min-height: 0px;
   }
 }
