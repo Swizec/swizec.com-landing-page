@@ -169,9 +169,41 @@ p.center {
     text-align: center;
 }
 
+@media screen and (max-width: 1200px) {
+  #me .left-side {
+      min-height: 0px;
+  }
+
+  header {
+      width: 700px
+  }
+
+  body {
+      background: none;
+  }
+  body::after {
+      content: "";
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: fixed;
+      z-index: -1;
+      opacity: .5;
+      background: url("../images/swizec-background.jpg") no-repeat;
+      background-size: 100%;
+      background-position-y: 30%;
+      background-attachment: fixed;
+  }
+}
+
+
 @media screen and (max-width: 768px) {
   body {
     background: none;
+  }
+  body::after {
+      background: none;
   }
   .jumbotron {
     font-size: 18px;
@@ -200,11 +232,5 @@ p.center {
   .stickied header {
       background: white;
       border: 1px solid red;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  #me .left-side {
-      min-height: 0px;
   }
 }
