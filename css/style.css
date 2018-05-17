@@ -1,113 +1,136 @@
-
 /* Space out content a bit */
+
 body {
-  background: url("../images/swizec-background.jpg") no-repeat;
-  background-size: 100%;
-  background-position-y: 30%;
-  background-attachment: fixed;
+    background: url("../images/swizec-background.jpg") no-repeat;
+    background-size: 100%;
+    background-position-y: 30%;
+    background-attachment: fixed;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
+
 .header,
 .marketing,
 .footer {
-  padding-left: 15px;
-  padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* Custom page header */
-.header {
 
-}
+.header {}
+
 header {
     width: 730px;
+    padding-bottom: 28px;
 }
+
 header small {
     display: block;
     margin-top: -1em;
 }
+
 .stickied header {
     z-index: 1;
 }
+
 .stickied header h1 {
     font-size: 28px;
 }
+
 /* Make the masthead heading the same height as the navigation */
+
 .header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
 }
 
 /* Custom page footer */
+
 .footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
 }
 
-.container, .stickied header {
-    background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 43%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(43%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 43%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 43%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 43%,rgba(255,255,255,0) 100%); /* IE10+ */
-    background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 43%,rgba(255,255,255,0) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+.container,
+.stickied header {
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 43%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(43%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 0)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 43%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 43%, rgba(255, 255, 255, 0) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 43%, rgba(255, 255, 255, 0) 100%);
+    /* IE10+ */
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 43%, rgba(255, 255, 255, 0) 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=1);
+    /* IE6-9 */
     margin: 0px;
 }
 
 /* Customize container */
+
 @media (min-width: 768px) {
-  .container, header {
-    max-width: 730px;
-  }
+    .container,
+    header {
+        max-width: 730px;
+    }
 }
-.container-narrow > hr {
-  margin: 30px 0;
+
+.container-narrow>hr {
+    margin: 30px 0;
 }
 
 /* Main marketing message and sign up button */
+
 .jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  //background: url("../images/hero-background.jpg");
-  //background-size: 700px;
-  //background-position-y: -150px;
-  text-align: right;
-  padding: 90px 60px;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5; //background: url("../images/hero-background.jpg");
+    //background-size: 700px;
+    //background-position-y: -150px;
+    text-align: right;
+    padding: 90px 60px;
 }
+
 .jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+    font-size: 21px;
+    padding: 14px 24px;
 }
 
 /* Supporting marketing content */
+
 .marketing {
-  margin: 40px 0;
+    margin: 40px 0;
 }
-.marketing p + h4 {
-  margin-top: 28px;
+
+.marketing p+h4 {
+    margin-top: 28px;
 }
 
 /* Responsive: Portrait tablets and up */
+
 @media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-      border-bottom: 0;
-  }
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
 }
 
 a {
@@ -154,7 +177,7 @@ div.col-lg-4 {
 }
 
 #me .left-side {
-    min-height: 450px;
+    min-height: 550px;
 }
 
 quote {
@@ -170,66 +193,63 @@ p.center {
 }
 
 @media screen and (max-width: 1200px) {
-  #me .left-side {
-      min-height: 0px;
-  }
-
-  header {
-      width: 700px
-  }
-
-  body {
-      background: none;
-  }
-  body::after {
-      content: "";
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: fixed;
-      z-index: -1;
-      opacity: .5;
-      background: url("../images/swizec-background.jpg") no-repeat;
-      background-size: 100%;
-      background-position-y: 30%;
-      background-attachment: fixed;
-  }
+    #me .left-side {
+        min-height: 0px;
+    }
+    header {
+        width: 700px
+    }
+    body {
+        background: none;
+    }
+    body::after {
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: fixed;
+        z-index: -1;
+        opacity: .5;
+        background: url("../images/swizec-background.jpg") no-repeat;
+        background-size: 100%;
+        background-position-y: 30%;
+        background-attachment: fixed;
+    }
 }
 
-
 @media screen and (max-width: 768px) {
-  body {
-    background: none;
-  }
-  body::after {
-      background: none;
-  }
-  .jumbotron {
-    font-size: 18px;
-    padding: 10px;
-    margin-top: -30px;
-  }
-  .col-lg-4.pull-right {
-      float: none !important;
-  }
-  .talks img {
-      width: 100%;
-      max-width: 571px;
-  }
-  ul {
-      padding-left: 0px !important;
-  }
-  header {
-      width: 100%;
-      background: white;
-      z-index: 1;
-      top: -10px;
-  }
-  header h1 {
-      font-size: 28px;
-  }
-  .stickied header {
-      background: white;
-  }
+    body {
+        background: none;
+    }
+    body::after {
+        background: none;
+    }
+    .jumbotron {
+        font-size: 18px;
+        padding: 10px;
+        margin-top: -30px;
+    }
+    .col-lg-4.pull-right {
+        float: none !important;
+    }
+    .talks img {
+        width: 100%;
+        max-width: 571px;
+    }
+    ul {
+        padding-left: 0px !important;
+    }
+    header {
+        width: 100%;
+        background: white;
+        z-index: 1;
+        top: -10px;
+    }
+    header h1 {
+        font-size: 28px;
+    }
+    .stickied header {
+        background: white;
+    }
 }

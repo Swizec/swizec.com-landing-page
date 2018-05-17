@@ -1,259 +1,462 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="favicon.png">
 
-    <title>Swizec Teller - A geek with a hat</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="favicon.png">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/ss-social-circle.css" rel="stylesheet" />
+  <title>Swizec Teller - A geek with a hat</title>
 
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/ss-social-circle.css" rel="stylesheet" />
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','//connect.facebook.net/en_US/fbevents.js');
+  <!-- Facebook Pixel Code -->
+  <script>
+    ! function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window,
+      document, 'script', '//connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '714190382013726');
-fbq('track', "PageView");</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=714190382013726&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-  </head>
+    fbq('init', '714190382013726');
+    fbq('track', "PageView");
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=714190382013726&ev=PageView&noscript=1"
+    />
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+</head>
 
-  <body>
+<body>
 
-    <div class="container">
+  <div class="container">
+
+
+    <div class="row marketing" id="me">
+      <div class="col-lg-4 left-side">
+        <img src="images/me-circle.png" />
+        <br />
+        <address>
+          <a href="mailto:hi@swizec.com?subject=Hi!" class="social" title="Email me">
+            <i class="ss-icon">email</i>
+          </a>
+          <a href="https://github.com/Swizec" class="social" title="See my github profile">
+            <i class="ss-icon">octocat</i>
+          </a>
+          <a href="https://twitter.com/Swizec" class="social" title="Follow me on twitter">
+            <i class="ss-icon">twitter</i>
+          </a>
+          <a href="http://swizec.com/blog/feed" class="social" title="Subscribe to RSS">
+            <i class="ss-icon">rss</i>
+          </a>
+        </address>
+      </div>
+      <h1 class="col-lg-8">Want to become a better frontend engineer?</h1>
+      <p class="col-lg-8">👋 Hi I'm Swizec the JavaScript guy and I'm here to help!</p>
+      <p class="col-lg-8">Subscribe 💌 below and you'll get my
+        <strong>interactive JavaScript cheatsheet</strong> 📖 right away.</p>
+      <p class="col-lg-8">After that I'll send you weekly emails about
+        <strong>React</strong>,
+        <strong>JavaScript</strong>, and
+        <strong>lessons learned</strong> in my 20 years of writing code for companies ranging from tiny startups to Fortune5 behemoths.</p>
+      <div class="col-lg-8 center" style="padding-bottom: 15px">
+        <form action="https://www.getdrip.com/forms/270040280/submissions" method="post" data-drip-embedded-form="270040280">
+          <div class="form-group">
+            <input type="email" name="fields[email]" value="" class="form-control" placeholder="Your Email" />
+          </div>
+          <div>
+            <input type="submit" name="submit" value="Teach me! 💌" class="btn btn-default" data-drip-attribute="sign-up-button" style="margin: 0 auto; display: block"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-8">
+        <blockquote>
+          your newsletter is one of my favorite, always interesting and full of useful content.
+          <br />~ Gaël
+        </blockquote>
+        <blockquote>
+          I just love the way you write an email.
+          <br />~ Prashen
+        </blockquote>
+        <blockquote>
+          Man, I love your way of writing these newsletters. Often very relatable and funny perspectives about the mundane struggles
+          of a dev. Lightens up my day.
+          <br /> ~ Kostas
+        </blockquote>
+      </div>
       <header>
         <h1 id="about">Swizec Teller</h1>
-        <small>A geek with a hat.</small>
-        <nav><a href="#about">about</a> | <a href="#consulting">consulting</a> | <a href="#books">books</a> | <a href="#talks">talks</a> | <a href="#projects">side-projects</a> | <a href="/blog">blog</a></nav>
+        <small>Helping you become a better engineer</small>
+        <nav>
+          <a href="#about">about</a> |
+          <a href="#workshops">workshops</a> |
+          <a href="#books">books</a> |
+          <a href="#consulting">consulting</a> |
+          <a href="#talks">talks</a> |
+          <a href="#projects">side-projects</a> |
+          <a href="/blog">blog</a>
+        </nav>
       </header>
-
-      <div class="row marketing" id="me">
-        <div class="col-lg-4 left-side">
-          <img src="images/me.png"/>
-          <br />
-          <address>
-            <a href="mailto:hi@swizec.com?subject=Hi!" class="social" title="Email me"><i class="ss-icon">email</i></a>
-	    <a href="https://github.com/Swizec" class="social" title="See my github profile"><i class="ss-icon">octocat</i></a>
-	    <a href="https://twitter.com/Swizec" class="social" title="Follow me on twitter"><i class="ss-icon">twitter</i></a>
-	    <a href="http://swizec.com/blog/feed" class="social" title="Subscribe to RSS"><i class="ss-icon">rss</i></a>
-          </address>
-        </div>
-        <p class="col-lg-8">Hi, I’m a digital nomad and full stack web engineer.</p>
-        <p class="col-lg-8">I travel the world and help startups win. From setting up new teams and training juniors, to fixing spaghetti code and implementing new features.</p>
-        <p class="col-lg-8">My code has been used by MasterCard, Commerzbank, Google, Mashable, Lyft, and many others.</p>
-        <p class="col-lg-8">When I’m not coding, I’m writing.</p>
-        <p class="col-lg-8">At least 5000 people bought my books ... I don’t know if that’s a lot, but it’s more than zero. I like that.</p>
-        <p class="col-lg-8">My work has been featured in Business Insider, LifeHacker, Huffington Post, and several dead-tree magazines. I’ve spoken on BBC Radio, appeared on Slovenian national television, and given talks all over the world.</p>
-        <p class="col-lg-8 center"><a href="/blog/" class="btn btn-success">Read My Blog</a></p>
-        <div class="col-lg-8 pull-right">
-            <form action="https://www.getdrip.com/forms/6593057/submissions" method="post" target="_blank" data-drip-embedded-form="6593057">
-                <h4>Get 10 of my best articles and talks</h4>
-                <p data-drip-attribute="description">Leave your email and over the next few weeks I will send you the best material I've written since 2010.</p>
-                <div class="form-group">
-                    <label for="fields[email]">Email Address</label>
-                    <input type="email" name="fields[email]" value="" class="form-control" />
-                </div>
-                <div>
-                    <input type="submit" name="submit" value="Sign Up" data-drip-attribute="sign-up-button" class="btn btn-default" />
-                </div>
-            </form>
+      <p class="col-lg-8">Hi, I’m Swizec 👋 I help you become a better engineer</p>
+      <p class="col-lg-8">Over the years I've helped hundreds of people just like you improve their craft through
+        <b>books, articles, workshops,</b> and
+        <b>talks</b>. Engineers from companies like Uber, Apple, 23andMe, and many others have used my writing to get better
+        <b>jobs, promotions,</b> and
+        <b>quickly ramp up</b> to new technologies.
+      </p>
+      <p class="col-lg-8">I publish
+        <a href="https://swizec.com/blog/">new articles on my blog</a> every week, host a
+        <a href="https://youtube.com/SwizecTeller">livecoding session</a> on my
+        <a href="https://youtube.com/SwizecTeller">YouTube channel</a> every Sunday and write a special letter just for my email subscribers every Monday. You can
+        <a href="https://twitter.com/Swizec">catch me on Twitter</a> a lot.</p>
+      <p class="col-lg-8">Sometimes I take on 1-on-1 coaching clients and help them build an MVP for their startup idea, or ramp up skills for
+        a new job.</p>
+      <p class="col-lg-8">
+        <big>If you or your team need help learning React and its ecosystem
+          <a href="mailto:hi@swizec.com">email me</a>
+        </big>
+      </p>
+      <p class="col-lg-8">Some of my work has been featured in 👇</p>
+      <div class="col-lg-8">
+        <div>
+          <img src="/reactd3js/static/media/business_insider.59c4e130.png" title="Business Insider" class="" style="width: 110px; padding: 5px; max-height: 80px; filter: grayscale(100%);">
+          <img src="/reactd3js/static/media/lifehacker.73b077b0.png" title="LifeHacker" class="" style="width: 110px; padding: 5px; max-height: 80px; filter: grayscale(100%);">
+          <img src="/reactd3js/static/media/bbc_radio.835047ce.png" title="BBC Radio" class="" style="width: 110px; padding: 5px; max-height: 80px; filter: grayscale(100%);">
+          <img src="/reactd3js/static/media/pragpub.074cd1c1.png" title="PragPub" class="" style="width: 110px; padding: 5px; max-height: 80px; filter: grayscale(100%);">
+          <img src="data:image/png;base64,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"
+            title="Huffington Post" class="" style="width: 110px; padding: 5px; max-height: 80px; filter: grayscale(100%);">
+          <img src="/reactd3js/static/media/javascript_weekly.c54ac964.png" title="JavaScript Weekly" class="" style="width: 110px; padding: 5px; max-height: 80px; filter: grayscale(100%);">
+          <img src="data:image/png;base64,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"
+            title="DZone" class="" style="width: 110px; padding: 5px; max-height: 80px; filter: grayscale(100%);">
+          <img src="/reactd3js/static/media/magpi.82085d33.png" title="MagPi magazine" class="" style="width: 110px; padding: 5px; max-height: 80px; filter: grayscale(100%);">
+          <img src="data:image/png;base64,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"
+            title="SitePoint" class="" style="width: 110px; padding: 5px; max-height: 80px; filter: grayscale(100%);">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPQAAABWCAYAAAD4+7sbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0NzVBMjM1Mjc4QTQxMUU3QTMzQ0UwMTA0Q0VFQzYzNyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0NzVBMjM1Mzc4QTQxMUU3QTMzQ0UwMTA0Q0VFQzYzNyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ3NUEyMzUwNzhBNDExRTdBMzNDRTAxMDRDRUVDNjM3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjQ3NUEyMzUxNzhBNDExRTdBMzNDRTAxMDRDRUVDNjM3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+8xh/DAAAFKVJREFUeNrsnQtQ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"
+            title="Forward JS" class="" style="width: 110px; padding: 5px; max-height: 80px; filter: grayscale(100%);">
+          <img src="/reactd3js/static/media/html5devconf-logo.f95e3ec1.svg" title="HTML5 DevConf" class="" style="width: 110px; padding: 5px; max-height: 80px; filter: grayscale(100%);">
+          <img src="/reactd3js/static/media/webcamp_zg.496e8214.png" title="WebCamp Zagreb" class="" style="width: 110px; padding: 5px; max-height: 80px; filter: grayscale(100%);">
+          <img src="/reactd3js/static/media/webcamp_lj.90266938.svg" title="WebCamp Ljubljana" class="" style="width: 110px; padding: 5px; max-height: 80px; filter: grayscale(100%);">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE6CAYAAACPqT4mAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDREEyQTdFNzc4QTQxMUU3QTMzQ0UwMTA0Q0VFQzYzNyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDREEyQTdFODc4QTQxMUU3QTMzQ0UwMTA0Q0VFQzYzNyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ3NUEyMzU4NzhBNDExRTdBMzNDRTAxMDRDRUVDNjM3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkNEQTJBN0U2NzhBNDExRTdBMzNDRTAxMDRDRUVDNjM3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Rer5ogAABNRJREFUeNrs3TFuGkEUgGGvIQdIC6bNBViZS1gotyA3Sm6RSHAJ0FKmcWsWylQp2clGoEiRHMUgP8zA90lIVMN6Fn7tuHlFSukG4Jrc2gLg2nRtAfA/k8nkc+T6s9nsIXL9uq4Hwgcc41Om171y1AWunvABwgcgfADCByB8AMIHIHwAwgcgfADCByB8AMIHIHwAwgcgfADCBwgfgPABCB+A8AHkxpQ14K19aV8Pp/zAIqVk2yFz4/H4a+T60+l0HHhCbNoOdTzxAcf4aAtexv/4AOEDED4A4QMQPgDhAxA+AOEDED4A4QMQPgDhAxA+AOEDED4A4QOED0D4AIQPQPgAhA9A+IDMfWtfTeDr5MzVfaGyLOeR6y+XyzJy/V6vt45cv67rQeT6/X7/KefrP9H352Lm3kYzV/cw9xlf+13g2qvM/4aV74+jLoDwAQgfgPABCB+A8AEIH4DwAQgfgPABCB+A8AEIH4DwAQgfIHwAwgcgfADCByB8AMIHIHzAK1rcXNjc22gXM1c387mluTvVj+PW9T9//Zc29zbapc3VNbfUycHJBzccQPgA4bMFgPABCB+A8AEIH4DwAQgfgPABCB+A8AEIH4DwAQgfgPABCB+A8AHCByB8AMIHIHwAmTnZeMnoubebzabndgJnFb49c28BR10A4QMQPgDhAxA+AOEDED4A4QOED0D4AIQPQPgAhA9A+ACED0D4AIQPQPgAhA9A+ACED0D4AP7yZ7xk7nNv1+u1u/mGPvwI/oCfscs/3uW9//1+/yly/bquBxcZvj1zbyHPk1tkuleOugDCByB8AMIHIHwAwgcgfADCByB8AMIHIHwAwgcgfIDwAQgfgPABCB+A8AEIH4DwAQgfwEl1bQFkr2lf5qseoEgp7d4UxdYTIMcKn6sb7PF93uFrf8cd30JHXQDhAxA+QPgAhA9A+ACED0D4AIQPQPgAhA9A+ACED0D4AIQPQPgAhA9A+ADhAxA+AOEDED4A4QPIhLm6kD9zdT3xAQgfgPABwgcgfADCByB8AMIHIHwAwgcgfADCByB8AMIHIHwAwgcgfADCBwifLQCED0D4AIQPQPgActK1BZC/siznketXVTUSPuDcTm73gesvHHUBhA9A+ACED0D4AIQPQPgAhA9A+ACED0D4AIQPQPgA4QMQPgDhAxA+AOEDED4A4QMQPgDhA4hUpJR2b4piK4TAM5q2Ex1PfADCByB8AMIHIHwAwgcgfADCByB8AMIHIHwAwgcgfIDwAQgfgPABCB+A8AEIH4DwAQgfgPABROnaAjLQeBBA+Dg7w+EwcvmqNYr8gP1caRx1AYQPQPgAhA9A+ACED0D4AIQPQPgAhA9A+ACED0D4AIQPED4A4QMQPgDhAxA+AOEDED4A4QN4A8ZLwk5jC4QPDrJcLiOXL1vzwPW/p5TeuYvCB+fk979k7m0Dr/mFAhA+AOEDED4A4QMQPgDhAxA+AOEDED4A4QMQPgDhAxA+AOEDhM8WAMIHIHwAwgcgfADCByB8AOejSCnt3hTFVgi5Us1wOKwiP6CqqpFtPh/m6kL83N6FLXbUBRA+AOEDED4A4QMQPgDhAxA+AOEDhA9A+ACED0D4AIQPQPgAhA9A+ACED0D4AIQPQPgAhA/g334JMAAqFL08ENp7HgAAAABJRU5ErkJggg=="
+            title="Pony Foo Weekly" class="" style="width: 110px; padding: 5px; max-height: 80px; filter: grayscale(100%);">
         </div>
       </div>
+      <p class="col-lg-8 center">
+        <a href="/blog/" class="btn btn-success">Read My Blog</a>
+      </p>
+    </div>
 
-      <div class="row marketing">
-        <h3 id="consulting">Some of my consulting clients</h3>
-
-        <div class="col-lg-8">
-          <h5>SeriousMumbo</h5>
-          <blockquote>"Swizec grasped complex ideas imemdiately and required no micromanagement, which gave me more time to focus on overall strategy. A project lead's dream. A beautiful dream."<br>~ Sherman Boyd, founder</blockquote>
-          <p>I developed custom software for a self-contained mail server device. As of early 2015 the project is gearing up for a Kickstarter launch.</p>
-          <small>Tech: node.js, html5, Angular.js</small>
+    <div class="row marketing">
+      <h3 id="workshops">My workshops</h3>
+      <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BghreGJgStj/"
+        data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+        <div style="padding:8px;">
+          <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:37.5% 0; text-align:center; width:100%;">
+            <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div>
+          </div>
+          <p style=" margin:8px 0 0 0; padding:0 4px;">
+            <a href="https://www.instagram.com/p/BghreGJgStj/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;"
+              target="_blank">Today was fun #reactd3workshop</a>
+          </p>
+          <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by
+            <a href="https://www.instagram.com/swizec/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;"
+              target="_blank"> Swizec Teller</a> (@swizec) on
+            <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-03-20T01:15:39+00:00">Mar 19, 2018 at 6:15pm PDT</time>
+          </p>
         </div>
+      </blockquote>
+      <script async defer src="//www.instagram.com/embed.js"></script>
 
-        <div class="col-lg-8">
-          <h5>Dwellers</h5>
-          <blockquote>"Dude, if we never had you we woulda been so fucked"<br>~ Phillip Nazarian, cofounder</blockquote>
-          <p>I was "the older guy" for a team of Stanford grads building a groceries on demand product. We went from idea to first paying customers in a month. As of early 2015, the team has pivoted into MathCrunch.</p>
-          <small>Tech: Ruby on Rails, Less, Backbone.js, Heroku, Circle CI</small>
-        </div>
+      <p class="col-lg-8">I offer a few different workshops centered around
+        <b>React and its ecosystem</b>. My workshops focus on practical exercises, having fun, and exploring interesting technologies
+        together. I believe in a
+        <b>personal</b> touch and making sure people
+        <b>enjoy the experience</b>.</p>
+      <p class="col-lg-8">My
+        <b>React Data Visualization</b> workshop has been enjoyed by hundreds of people at conferences, public events, and private
+        in-house engagements.</p>
+      <p class="col-lg-8">My
+        <b>React & Redux</b> workshop is newer but just as fun.</p>
+      <blockquote>Even though the material covered is/was online somewhere and maybe even in a video, there was a ton of value gained
+        by being there in person in front of Swizec (instructor). Well worth the trip/cost!</blockquote>
+      <blockquote>Your workshop was definitely worth while and traveling for.</blockquote>
+      <p class="col-lg-8">
+        <big>Want me to train your team?
+          <a href="mailto:hi@swizec.com">email me at hi@swizec.com</a>
+        </big>
+      </p>
+      <p class="col-lg-8">I'm always working on new workshops and materials. If you have an idea for something new, I'd love to hear it.</p>
+    </div>
 
-        <div class="col-lg-8">
-          <h5>Reciprocity</h5>
-          <p>I joined a team developing custom risk and compliance software used internally at Google, Lyft and other web startups. On top of adding features and fixing bugs, I am streamlining their hiring and onboarding processes, and improving engineering practices.</p>
-          <small>Tech: Flask, Can.js, Compass, AppEngine, Travis CI</small>
-        </div>
+    <div class="row marketing">
+      <h3 id="books">My Books</h3>
+      <div class="col-lg-4 pull-right">
+        <a href="http://nightowlsbook.com">
+          <img src="images/nightowls.png" title="Why programmers work at night" alt="Why programmers work at night" />
+        </a>
+      </div>
+      <h5 class="col-lg-8">
+        <a href="http://nightowlsbook.com">Why programmers work at night</a>
+      </h5>
+      <p class="col-lg-8">The early bird does not always catch the worm, sometimes it meets a cat.</p>
+      <p class="col-lg-8">Programmers often work on unusual schedules that do not jive with the modern 9-5 office culture. They don't even do
+        their best work at offices.</p>
+      <p class="col-lg-8">This book shows programmers and those around them that there's a better way.</p>
+      <p class="col-lg-8">
+        <quote>"My girlfriend loved your book!"</quote> ~ Jan Hančič</p>
+    </div>
 
-        <div class="col-lg-8">
-          <h5>ResponsiveAds</h5>
-          <p>I built custom features required by MasterCard after the startup's old team fell apart. We ultimately failed to meet the deadline, but as of early 2015 the team is still going strong.</p>
-          <small>Tech: node.js, Angular.js, HTML5</small>
-        </div>
+    <div class="row marketing">
+      <div class="col-lg-4">
+        <a href="http://www.packtpub.com/data-visualization-with-d3js/book">
+          <img src="images/data-visualization-with-d3js.png" title="Data visualization with d3.js" alt="Data visualization with d3.js"
+          />
+        </a>
+      </div>
+      <h5 class="col-lg-8">
+        <a href="http://www.packtpub.com/data-visualization-with-d3js/book">Data Visualization with d3.js</a>
+      </h5>
+      <p class="col-lg-8">When you're learning d3.js on your own you often feel like Step
+        <em>1: Draw two circles</em>, is followed by
+        <em>Step 2: Draw the rest of the owl</em>. My book aims to bridge that gap.</p>
+      <p class="col-lg-8">I guide you through complete examples from basic shapes on a page to full blown visualisations. There is no magic here,
+        no steps left unexplained. You will understand everything that goes into making a visualization with d3.js.</p>
+    </div>
 
-        <div class="col-lg-8">
-          <h5>Ribbon</h5>
-          <p>I added unit testing and proper currencies support to a global payments processing startup. The state of their codebase had started impacting their post Series A growth. As of early 2015, the company has pivoted into a pay-your-friends service.</p>
-          <small>Tech: ruby on rails</small>
-        </div>
+    <div class="row marketing">
+      <div class="col-lg-4 pull-right">
+        <a href="http://swizec.com/reactd3js">
+          <img src="images/reactd3js.png" title="React D3v4" alt="React+d3.js" />
+        </a>
+      </div>
+      <h5 class="col-lg-8">
+        <a href="http://swizec.com/reactd3js">React + D3v4</a>
+      </h5>
+      <p class="col-lg-8">Creating dynamic data visualizations on the web is a pain in the ass.</p>
+      <p class="col-lg-8">You either have to use dumbed down libraries that won't let you do what you want, or make everything from scratch.
+        Every time.</p>
+      <p class="col-lg-8">You want a quick way to build complex visualizations. Build once, use everywhere. In every project. Don't believe me?
+        Scroll down.</p>
+      <p class="col-lg-8">With React + D3v4 you'll learn how to build re-usable visualization components in about an hour.</p>
+    </div>
 
-        <div class="col-lg-8">
-          <h5>Xicor</h5>
-          <p>Improved the stability of a commodities trading platform for a Swiss startup. It was used by some major European banks and ultimately got acquired by Commerzbank.</p>
-          <small>Tech: node.js, backbone.js, jQuery</small>
-        </div>
+    <div class="row marketing">
+      <h3 id="consulting">Some of my consulting clients</h3>
+      <p class="col-lg-8">These days I focus on being a force multiplier for your team moreso than writing your code.</p>
 
-        <div class="col-lg-8">
-          <h5>---</h5>
-          <p>Got a cool startup with bad code? You should email me here: <a href="mailto:hi@swizec.com">hi@swizec.com</a></p>
-        </div>
-
+      <div class="col-lg-8">
+        <h5>SeriousMumbo</h5>
+        <blockquote>"Swizec grasped complex ideas imemdiately and required no micromanagement, which gave me more time to focus on overall
+          strategy. A project lead's dream. A beautiful dream."
+          <br>~ Sherman Boyd, founder</blockquote>
+        <p>I developed custom software for a self-contained mail server device. As of early 2015 the project is gearing up for
+          a Kickstarter launch.</p>
+        <small>Tech: node.js, html5, Angular.js</small>
       </div>
 
-      <div class="row marketing">
-        <h3 id="books">My Books</h3>
-        <div class="col-lg-4 pull-right">
-          <a href="http://nightowlsbook.com"><img src="images/nightowls.png" title="Why programmers work at night" alt="Why programmers work at night" /></a>
-        </div>
-        <h5 class="col-lg-8"><a href="http://nightowlsbook.com">Why programmers work at night</a></h5>
-        <p class="col-lg-8">The early bird does not always catch the worm, sometimes it meets a cat.</p>
-        <p class="col-lg-8">Programmers often work on unusual schedules that do not jive with the modern 9-5 office culture. They don't even do their best work at offices.</p>
-        <p class="col-lg-8">This book shows programmers and those around them that there's a better way.</p>
-        <p class="col-lg-8"><quote>"My girlfriend loved your book!"</quote> ~ Jan Hančič</p>
+      <div class="col-lg-8">
+        <h5>Dwellers</h5>
+        <blockquote>"Dude, if we never had you we woulda been so fucked"
+          <br>~ Phillip Nazarian, cofounder</blockquote>
+        <p>I was "the older guy" for a team of Stanford grads building a groceries on demand product. We went from idea to first
+          paying customers in a month. As of early 2015, the team has pivoted into MathCrunch.</p>
+        <small>Tech: Ruby on Rails, Less, Backbone.js, Heroku, Circle CI</small>
       </div>
 
-      <div class="row marketing">
-        <div class="col-lg-4">
-          <a href="http://www.packtpub.com/data-visualization-with-d3js/book">
-            <img src="images/data-visualization-with-d3js.png" title="Data visualization with d3.js" alt="Data visualization with d3.js" /></a>
-        </div>
-        <h5 class="col-lg-8"><a href="http://www.packtpub.com/data-visualization-with-d3js/book">Data Visualization with d3.js</a></h5>
-        <p class="col-lg-8">When you're learning d3.js on your own you often feel like Step <em>1: Draw two circles</em>, is followed by <em>Step 2: Draw the
-        rest of the owl</em>. My book aims to bridge that gap.</p>
-        <p class="col-lg-8">I guide you through complete examples from basic shapes on a page to full blown visualisations. There is no magic here, no steps left unexplained. You will understand everything that goes into making a visualization with d3.js.</p>
+      <div class="col-lg-8">
+        <h5>Reciprocity</h5>
+        <p>I joined a team developing custom risk and compliance software used internally at Google, Lyft and other web startups.
+          On top of adding features and fixing bugs, I am streamlining their hiring and onboarding processes, and improving
+          engineering practices.</p>
+        <small>Tech: Flask, Can.js, Compass, AppEngine, Travis CI</small>
       </div>
 
-      <div class="row marketing">
-        <div class="col-lg-4 pull-right">
-          <a href="http://swizec.com/reactd3js"><img src="images/reactd3js.jpg" title="React+d3.js" alt="React+d3.js" /></a>
-        </div>
-        <h5 class="col-lg-8"><a href="http://swizec.com/reactd3js">React+d3.js</a></h5>
-        <p class="col-lg-8">Creating dynamic data visualizations on the web is a pain in the ass.</p>
-        <p class="col-lg-8">You either have to use dumbed down libraries that won't let you do what you want, or make everything from scratch. Every time.</p>
-        <p class="col-lg-8">You want a quick way to build complex visualizations. Build once, use everywhere. In every project. Don't believe me? Scroll down.</p>
-        <p class="col-lg-8">With React+d3.js you'll learn how to build re-usable visualization components in about an hour.</p>
+      <div class="col-lg-8">
+        <h5>ResponsiveAds</h5>
+        <p>I built custom features required by MasterCard after the startup's old team fell apart. We ultimately failed to meet
+          the deadline, but as of early 2015 the team is still going strong.</p>
+        <small>Tech: node.js, Angular.js, HTML5</small>
       </div>
 
-      <div class="row marketing">
-        <h3 id="talks">Some of my talks</h3>
-        <p class="center talks"><img src="images/swizec-at-writethedocs.jpg" class="talks"/></br><small>Photo by <a href="https://www.flickr.com/photos/122201294@N05/">WriteTheDocs</a></small></p>
-        <blockquote>Swizec had every­one simul­ta­ne­ously laugh­ing, com­mis­er­at­ing and applaud­ing with his epic tale of blood, sweat, tears and rewrites. This ses­sion also fea­tured the sin­gle best quote of the entire con­fer­ence: “Edi­tors are hor­ri­ble people”.
-          <br>~ <a href="http://kay.smoljak.com/2014/04/write-the-docs/">Kay Smoljak</a> about my talk at WTD Hungary 2014
-        </blockquote>
-
-        <blockquote>
-          First talk of the conference that made me want to close my laptop
-          <br>~ <a href="http://twitter.com/lowk3y">lowk3y</a> about my keynote at Drupal Alpe Adria 2014
-        </blockquote>
-
-        <ul>
-          <li>2014 - <a href="https://www.youtube.com/watch?v=LED7ezyT7l0">Wat ... are we doing to ourselves?</a>
-          <li>2014 - <a href="https://www.youtube.com/watch?v=xVT19ZBL2g8">Why programmers work at night</a>, keynote</li>
-          <li>2014 - <a href="https://www.youtube.com/watch?v=w1L2SgQuv6Q">What I learned writing a lousy tech book</a></li>
-          <li>2013 - <a href="http://video.kiberpipa.org/samozaloznistvo_da_ali_ne/">Self-publishing yes or no</a></li>
-          <li>2012 - <a href="http://2012.webcampzg.org/swizec-teller-why-programmers-code-at-night/">Why programmers work at night</a></li>
-          <li>2012 - <a href="http://video.kiberpipa.org/py_swizec_modern_python_idioms/">Modern Python idioms</a></li>
-          <li>2012 - <a href="http://video.hekovnik.com/stc_4_p_2_swizec_i_dont_like_servers/">I don't like servers</a></li>
-          <li>2012 - <a href="http://video.kiberpipa.org/pot_dml_0522/">Django SQL optimisation</a></li>
-          <li>2012 - <a href="http://video.kiberpipa.org/SU_Swizec_Teller-Bloganje_klobuki/">Blogging, hats, stuff</a></li>
-          <li>2011 - <a href="http://video.webcamp.si/wc2011_teller_tools_that_get_you_laid/">Tools that get you laid</a></li>
-          <li>2010 - <a href="http://video.kiberpipa.org/su_swizec_teller-ciscenje_divjih_internetov/">Scraping the wild internets</a></li>
-          <li>2010 - <a href="http://video.kiberpipa.org/pot_swizec-the_future_internet/">The future internet</a></li>
-          <li>2010 - <a href="http://video.kiberpipa.org/camp_swizec_teller-lazysharer/">LazySharer</a></li>
-          <li>2009 - <a href="http://video.kiberpipa.org/camp_swizec-the_synaptic_web/">The Synaptic Web</a></li>
-        </ul>
+      <div class="col-lg-8">
+        <h5>Ribbon</h5>
+        <p>I added unit testing and proper currencies support to a global payments processing startup. The state of their codebase
+          had started impacting their post Series A growth. As of early 2015, the company has pivoted into a pay-your-friends
+          service.
+        </p>
+        <small>Tech: ruby on rails</small>
       </div>
 
-      <div class="row marketing">
-        <h3 id="projects">Side-Projects</h3>
-        <p>Some of my more notable personal projects.</p>
-        <ul>
-          <li>
-            <a href="http://www.meetup.com/Ljubljana-JavaScript-User-Group/">JavaScript Meetup Group Ljubljana</a>
+      <div class="col-lg-8">
+        <h5>Xicor</h5>
+        <p>Improved the stability of a commodities trading platform for a Swiss startup. It was used by some major European
+          banks and ultimately got acquired by Commerzbank.</p>
+        <small>Tech: node.js, backbone.js, jQuery</small>
+      </div>
+    </div>
+
+    <div class="row marketing">
+      <h3 id="talks">Some of my talks</h3>
+      <p class="center talks">
+        <img src="images/swizec-at-writethedocs.jpg" class="talks" />
+        </br>
+        <small>Photo by
+          <a href="https://www.flickr.com/photos/122201294@N05/">WriteTheDocs</a>
+        </small>
+      </p>
+      <blockquote>Swizec had every­one simul­ta­ne­ously laugh­ing, com­mis­er­at­ing and applaud­ing with his epic tale of blood, sweat,
+        tears and rewrites. This ses­sion also fea­tured the sin­gle best quote of the entire con­fer­ence: “Edi­tors are
+        hor­ri­ble people”.
+        <br>~
+        <a href="http://kay.smoljak.com/2014/04/write-the-docs/">Kay Smoljak</a> about my talk at WTD Hungary 2014
+      </blockquote>
+
+      <blockquote>
+        First talk of the conference that made me want to close my laptop
+        <br>~
+        <a href="http://twitter.com/lowk3y">lowk3y</a> about my keynote at Drupal Alpe Adria 2014
+      </blockquote>
+
+      <ul>
+        <li>2014 -
+          <a href="https://www.youtube.com/watch?v=LED7ezyT7l0">Wat ... are we doing to ourselves?</a>
+          <li>2014 -
+            <a href="https://www.youtube.com/watch?v=xVT19ZBL2g8">Why programmers work at night</a>, keynote</li>
+          <li>2014 -
+            <a href="https://www.youtube.com/watch?v=w1L2SgQuv6Q">What I learned writing a lousy tech book</a>
           </li>
-          <li>
-            <a href="https://github.com/Swizec/Personal-Runway">Personal Runway</a> - bank balance prediction in your email
+          <li>2013 -
+            <a href="http://video.kiberpipa.org/samozaloznistvo_da_ali_ne/">Self-publishing yes or no</a>
           </li>
-          <li>
-            <a href="https://github.com/Swizec/node-unshortener">node-unshortener</a> - node library to unshorten shortened links
+          <li>2012 -
+            <a href="http://2012.webcampzg.org/swizec-teller-why-programmers-code-at-night/">Why programmers work at night</a>
           </li>
-          <li>
-            <a href="https://github.com/Swizec/Le-Thesis">automatic poetry generator</a>
+          <li>2012 -
+            <a href="http://video.kiberpipa.org/py_swizec_modern_python_idioms/">Modern Python idioms</a>
           </li>
-          <li>
-            Postme.me - service for sending funny pictures as postcards
+          <li>2012 -
+            <a href="http://video.hekovnik.com/stc_4_p_2_swizec_i_dont_like_servers/">I don't like servers</a>
           </li>
-          <li>
-            hipstervision.org - location-based search engine
-            for Instagram
+          <li>2012 -
+            <a href="http://video.kiberpipa.org/pot_dml_0522/">Django SQL optimisation</a>
           </li>
-          <li>
-            Preona - startup trying to create a smart RSS reader for tablets
+          <li>2012 -
+            <a href="http://video.kiberpipa.org/SU_Swizec_Teller-Bloganje_klobuki/">Blogging, hats, stuff</a>
           </li>
-        </ul>
-      </div>
+          <li>2011 -
+            <a href="http://video.webcamp.si/wc2011_teller_tools_that_get_you_laid/">Tools that get you laid</a>
+          </li>
+          <li>2010 -
+            <a href="http://video.kiberpipa.org/su_swizec_teller-ciscenje_divjih_internetov/">Scraping the wild internets</a>
+          </li>
+          <li>2010 -
+            <a href="http://video.kiberpipa.org/pot_swizec-the_future_internet/">The future internet</a>
+          </li>
+          <li>2010 -
+            <a href="http://video.kiberpipa.org/camp_swizec_teller-lazysharer/">LazySharer</a>
+          </li>
+          <li>2009 -
+            <a href="http://video.kiberpipa.org/camp_swizec-the_synaptic_web/">The Synaptic Web</a>
+          </li>
+      </ul>
+    </div>
 
-      <div class="footer">
-        <p>&copy; Swizec Teller</p>
-      </div>
+    <div class="row marketing">
+      <h3 id="projects">Side-Projects</h3>
+      <p>Some of my more notable personal projects.</p>
+      <ul>
+        <li>
+          <a href="http://www.meetup.com/Ljubljana-JavaScript-User-Group/">JavaScript Meetup Group Ljubljana</a>
+        </li>
+        <li>
+          <a href="https://github.com/Swizec/Personal-Runway">Personal Runway</a> - bank balance prediction in your email
+        </li>
+        <li>
+          <a href="https://github.com/Swizec/node-unshortener">node-unshortener</a> - node library to unshorten shortened links
+        </li>
+        <li>
+          <a href="https://github.com/Swizec/Le-Thesis">automatic poetry generator</a>
+        </li>
+        <li>
+          Postme.me - service for sending funny pictures as postcards
+        </li>
+        <li>
+          hipstervision.org - location-based search engine for Instagram
+        </li>
+        <li>
+          Preona - startup trying to create a smart RSS reader for tablets
+        </li>
+      </ul>
+    </div>
 
-    </div> <!-- /container -->
+    <div class="footer">
+      <p>&copy; Swizec Teller</p>
+    </div>
+
+  </div>
+  <!-- /container -->
 
 
-    <!-- Bootstrap core JavaScript
+  <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
-    <script src="//cdn.jsdelivr.net/jquery.sticky/1.0.1/jquery.sticky.min.js"></script>
-    <script src="/js/script.js"></script>
-    <!-- Drip -->
-    <script type="text/javascript">
-     var _dcq = _dcq || [];
-     var _dcs = _dcs || {};
-     _dcs.account = '8489863';
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/jquery.sticky/1.0.1/jquery.sticky.min.js"></script>
+  <script src="/js/script.js"></script>
+  <!-- Drip -->
+  <script type="text/javascript">
+    var _dcq = _dcq || [];
+    var _dcs = _dcs || {};
+    _dcs.account = '8489863';
 
-     (function() {
-         var dc = document.createElement('script');
-         dc.type = 'text/javascript'; dc.async = true;
-         dc.src = '//tag.getdrip.com/8489863.js';
-         var s = document.getElementsByTagName('script')[0];
-         s.parentNode.insertBefore(dc, s);
-     })();
-    </script>
-    <script>
-     var _gaq=[['_setAccount','UA-1464315-1'],['_trackPageview']];
-     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
-  </body>
+    (function () {
+      var dc = document.createElement('script');
+      dc.type = 'text/javascript';
+      dc.async = true;
+      dc.src = '//tag.getdrip.com/8489863.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(dc, s);
+    })();
+  </script>
+  <script>
+    var _gaq = [
+      ['_setAccount', 'UA-1464315-1'],
+      ['_trackPageview']
+    ];
+    (function (d, t) {
+      var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+      g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g, s)
+    }(document, 'script'));
+  </script>
+</body>
+
 </html>
