@@ -11,6 +11,10 @@
   overflow: auto;
 }
 
+body {
+  background: black;
+}
+
 /**
 * Remove the default PrismJS theme background-color, border-radius, margin,
 * padding and overflow.

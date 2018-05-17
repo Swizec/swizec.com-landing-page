@@ -1,18 +1,24 @@
 module.exports = {
   siteMetadata: {
-    title: 'React and D3v4 workshop by Swizec',
+    title: 'Swizec Teller helps you become a better frontend engineer',
+    description: 'Swizec Teller, A geek with a hat, helps you become a better frontend engineer. Writing about fun experiments, joyful exploration, and hard lessons learned.',
   },
   plugins: [
     'gatsby-plugin-react-next',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-typography',
-      options: { pathToConfigModule: 'src/utils/typography.js' },
+      options: {
+        pathToConfigModule: 'src/utils/typography.js'
+      },
     },
     'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-source-filesystem',
-      options: { name: 'src', path: `${__dirname}/src/` },
+      options: {
+        name: 'src',
+        path: `${__dirname}/src/`
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
