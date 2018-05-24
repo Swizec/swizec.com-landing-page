@@ -253,3 +253,8 @@ p.center {
         background: white;
     }
 }
+
+h3.stickied a {
+    padding-top: 100px;
+    display: block;
+}
